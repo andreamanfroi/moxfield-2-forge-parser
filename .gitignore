@@ -21,3 +21,5 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+moxfield-to-forge-exe.exe
+moxfield-to-forge.cabal
