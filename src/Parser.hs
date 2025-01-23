@@ -31,7 +31,7 @@ extractCommander lines =
 -- Split the deck into main and sideboard sections
 splitDeckSections :: [Text] -> ([Text], [Text])
 splitDeckSections lines =
-    let (main, rest) = break (== pack "SIDEBOARD:") lines -- Convert "SIDEBOARD:" to Text
+    let (main, rest) = break (== pack "SIDEBOARD:") lines
     in (main, drop 1 rest) -- Drop the "SIDEBOARD:" header
 
 -- Parse a card line into a Card
