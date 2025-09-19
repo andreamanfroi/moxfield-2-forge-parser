@@ -26,5 +26,5 @@ processFile :: FilePath -> FilePath -> FilePath -> IO ()
 processFile inputPath outputPath file = do
     deck <- parseCommanderDeck (inputPath </> file)
     let forgeDeck = convertToForge deck
-        outputFile = outputPath </> generateFilename (commander deck) -- Use Commander for filename
+        outputFile = outputPath </> generateFilename (commander deck)
     writeFile outputFile (T.unpack forgeDeck)
