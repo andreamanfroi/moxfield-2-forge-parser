@@ -9,7 +9,7 @@ convertToForge deck =
     let metadata = pack "[metadata]\nName=" <> name (commander deck) <> pack "_centurion_vers1"
         formatCommander = pack "[commander]\n" <> pack (show (count (commander deck))) <> pack " " <> name (commander deck)
         avatar = pack "[Avatar]\n"             
-        mainHeader = pack "[Main]"            
+        mainHeader = pack "[Main]"             
         sideboardHeader = pack "[Sideboard]"    
         extras = pack "[Planes]\n\n[Schemes]\n\n[Conspiracy]\n" 
         mainDeckLines = map formatCard (mainDeck deck)
